@@ -135,7 +135,7 @@ def refresh_employee_list():
 window = tk.Tk()
 window.title("Список сотрудников компании")
 
-# Создание интерфеса и других эелементов
+# Создание интерфейса и других элементов
 label_full_name = tk.Label(window, text="ФИО:")
 label_full_name.grid(row=0, column=0, padx=5, pady=5)
 entry_full_name = tk.Entry(window)
@@ -189,7 +189,7 @@ treeview.heading("Номер телефона", text="Номер телефон�
 treeview.heading("Адрес электронной почты", text="Адрес электронной почты")
 treeview.heading("Зарплата", text="Зарплата")
 treeview.grid(row=6, column=0, columnspan=3, padx=5, pady=5)
-# Обработчик для получения выделеннйо строки
+# Обработчик для получения выделенной строки
 treeview.bind('<ButtonRelease-1>', on_treeview_click)
 
 refresh_employee_list()
